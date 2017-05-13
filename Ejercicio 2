@@ -1,0 +1,25 @@
+package tarea.pkg1.programacion;
+//
+
+/**
+ *
+ * @author Magdiel
+ */
+// Problema de la mochila
+public class Ejercicio2 {
+        public static void main(String[] args) {   
+        // Aqui se genera v que es un arreglo que indica si el item esta 
+        //en la mochila o no esta a travez de un sistema binario.
+        double [] v= {0, 0,0,1,1,1,0};
+        // luego se genera w que indica el peso de ada item
+double [] w= {45,23,11,9,2,2,10};
+// finalmente costo hace referencia al peso total que tiene la mochila con los 
+//itemas que se encuentran en ella.
+int costo;
+         costo = 0;
+for(int i=0; i< v.length; i++){
+costo+= v[i] * w[i];
+}
+System.out.println("Costo Mochila--> "+ costo);
+    }  
+}
